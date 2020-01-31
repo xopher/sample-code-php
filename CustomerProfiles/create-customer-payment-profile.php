@@ -48,7 +48,7 @@ function createCustomerPaymentProfile($existingcustomerprofileid, $phoneNumber)
     // Create a new Customer Payment Profile object
     $paymentprofile = new AnetAPI\CustomerPaymentProfileType();
     $paymentprofile->setCustomerType('individual');
-    $paymentprofile->setBillTo($billto);
+    $paymentprofile->setBillTo($billTo);
     $paymentprofile->setPayment($paymentCreditCard);
     $paymentprofile->setDefaultPaymentProfile(true);
 
